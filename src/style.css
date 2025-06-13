@@ -1,0 +1,270 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem; 
+  justify-content: center;
+}
+
+.juego-imagen {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.form-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-vertical label {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.form-vertical input {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-vertical select {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.juegos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center; 
+  margin-top: 2rem;
+  list-style: none; 
+  padding: 0;
+}
+
+juego-card {
+  background: #fff;
+  color: #222;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 1.2rem;
+  width: 220px;      
+  height: 260px;     
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0;
+  text-align: center;
+  align-items: center; 
+}
+
+.juego-card .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  gap: 1rem;
+}
+
+.juego-card .font-semibold {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+}
+
+.juego-card .text-xs {
+  font-size: 0.9em;
+  margin-bottom: 0.2em;
+}
+
+.juego-card .text-green-600 {
+  color: #16a34a;
+}
+
+.juego-card .text-blue-600 {
+  color: #2563eb;
+}
+
+.juego-card .text-red-600 {
+  color: #dc2626;
+}
+
+.juego-card .mt-2 {
+  margin-top: 0.7em;
+}
+
+.juego-imagen {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.home-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; 
+}
+
+.home-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  padding: 2.5rem 2rem;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+
+.home-card h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 1.2rem;
+}
+
+.home-card p {
+  color: #374151;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.home-btn {
+  background: #2563eb;
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.home-btn:hover {
+  background: #1e40af;
+}
+
+.footer {
+  margin-top: 3rem; 
+  text-align: center;
+  color: #888;
+  font-size: 0.95em;
+}
+
+.form-vertical .filtro-input {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 0;
+  box-sizing: border-box;
+  margin-top: 0; 
+}
+
+.form-vertical .filtro-input:focus {
+  outline: 2px solid #2563eb;
+  border-color: #2563eb;
+}
+
+.form-vertical .filtros > div:not(:first-child) {
+  margin-top: 0.5rem; 
+}
+
+.filtros {
+  margin-top: 1.5rem; 
+}
