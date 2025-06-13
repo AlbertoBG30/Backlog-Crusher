@@ -3,29 +3,29 @@
   <div>
     <label class="block text-xs font-semibold text-blue-700 mb-1">Categoría</label>
     <select v-model="filtroCategoria" class="border rounded px-2 py-1">
-      <option value="">Todas</option>
-      <option value="Acción">Acción</option>
-      <option value="Aventura">Aventura</option>
-      <option value="RPG">RPG</option>
-      <option value="Estrategia">Estrategia</option>
-      <option value="Deportes">Deportes</option>
-      <option value="Simulación">Simulación</option>
-      <option value="Plataformas">Plataformas</option>
-      <option value="Puzzle">Puzzle</option>
-      <option value="Terror">Terror</option>
+      <option value="">todas</option>
+      <option value="acción">acción</option>
+      <option value="aventura">aventura</option>
+      <option value="rpg">rpg</option>
+      <option value="estrategia">estrategia</option>
+      <option value="deportes">deportes</option>
+      <option value="simulación">simulación</option>
+      <option value="plataformas">plataformas</option>
+      <option value="puzzle">puzzle</option>
+      <option value="terror">terror</option>
       <option v-for="cat in categoriasUnicas" :key="cat" :value="cat">{{ cat }}</option>
     </select>
   </div>
   <div>
     <label class="block text-xs font-semibold text-blue-700 mb-1">Etiquetas</label>
 <select v-model="filtroEtiqueta" class="border rounded px-2 py-1">
-  <option value="">Todas</option>
-  <option value="Narrativa">Narrativa</option>
-  <option value="Exploración">Exploración</option>
-  <option value="Piscologico">Piscologico</option>
-  <option value="Terror">Terror</option>
-  <option value="Por turnos">Por turnos</option>
-  <option value="Acción">Acción</option>
+  <option value="">todas</option>
+  <option value="narrativa">narrativa</option>
+  <option value="exploración">exploración</option>
+  <option value="piscologico">piscologico</option>
+  <option value="terror">terror</option>
+  <option value="por turnos">Por turnos</option>
+  <option value="acción">acción</option>
   <option v-for="tag in etiquetasUnicas" :key="tag" :value="tag">{{ tag }}</option>
 </select>
   </div>
