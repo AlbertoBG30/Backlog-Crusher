@@ -18,16 +18,16 @@
   </div>
   <div>
     <label class="block text-xs font-semibold text-blue-700 mb-1">Etiquetas</label>
-    <select v-model="filtroEtiqueta" class="border rounded px-2 py-1">
-      <option value="">Todas</option>
-      <option value="">Narrativa</option>
-      <option value="">Exploración</option>
-      <option value="">Piscologico</option>
-      <option value="">Terror</option>
-      <option value="">Por turnos</option>
-      <option value="">Acción</option>
-      <option v-for="tag in etiquetasUnicas" :key="tag" :value="tag">{{ tag }}</option>
-    </select>
+<select v-model="filtroEtiqueta" class="border rounded px-2 py-1">
+  <option value="">Todas</option>
+  <option value="Narrativa">Narrativa</option>
+  <option value="Exploración">Exploración</option>
+  <option value="Piscologico">Piscologico</option>
+  <option value="Terror">Terror</option>
+  <option value="Por turnos">Por turnos</option>
+  <option value="Acción">Acción</option>
+  <option v-for="tag in etiquetasUnicas" :key="tag" :value="tag">{{ tag }}</option>
+</select>
   </div>
   <div>
     <label class="block text-xs font-semibold text-blue-700 mb-1">Metacritic</label>
